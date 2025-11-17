@@ -45,7 +45,7 @@ export function Hero({ onStartQuiz }: HeroProps) {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ export function Hero({ onStartQuiz }: HeroProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-white mb-6"
+            className="text-white mb-6 font-bold text-2xl md:text-3xl"
           >
             You Are Not Alone
           </motion.h1>
