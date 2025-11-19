@@ -1,73 +1,34 @@
-# React + TypeScript + Vite
+🌸 Postpartum Depression Assessment Tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful and empathetic web application designed to help women assess postpartum depression risk using the Edinburgh Postnatal Depression Scale (EPDS). Features AI-powered personalized analysis, supportive resources, and a calming floral-themed interface.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+10-Question EPDS Quiz - Clinically validated screening tool
+AI-Powered Analysis - Personalized risk assessment and recommendations
+Beautiful UI - Soft pastel theme (purple, pink, rose) with animated floating flowers
+Empathetic Design - Glassmorphism effects, smooth animations, and calming gradients
+Support Resources - Personalized recommendations based on risk level
+Responsive Design - Works seamlessly on desktop and mobile
 
-## React Compiler
+🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend:
+React 18 with TypeScript
+Tailwind CSS v4.0
+Motion/React for animations
+ShadCN UI components
 
-## Expanding the ESLint configuration
+Backend:
+FastAPI (Python)
+AI/ML model for personalized assessment
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🎨 Design Philosophy
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Created with empathy and care for women experiencing postpartum challenges. The interface uses therapeutic pastel colors, gentle animations, and supportive messaging to create a safe, non-judgmental space.
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Tags (for GitHub topics):
+```
+postpartum-depression, mental-health, react, typescript, tailwind-css, fastapi, ai-ml, healthcare, epds, women-health, accessibility, glassmorphism, framer-motion
 ```
